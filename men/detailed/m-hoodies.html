@@ -1,0 +1,123 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="This page is where the user can view the selection of mens hoodies">
+    <link rel="stylesheet" href="../../project.css">
+    <title>Rising High Co. | Home</title>
+</head>
+<body>
+
+    <header>
+        <div class="header">
+            <div class="logo-and-icons">
+                <div class="logo">
+                    <img src="../../images/logo1.jpeg" alt="Rising High Co logo">
+                </div>
+                <div class="header-icons">
+                    <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post" >
+                        <input type="hidden" name="cmd" value="_cart">
+                        <input type="hidden" name="business" value="RSF4TEW7CLW4Y">
+                        <input type="hidden" name="display" value="1">
+                        <input type="image" src="../../images/cart.jpeg" height="15px" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                    </form>
+                    <img src="../../images/menu-icon.png" alt="Menu" class="menu-icon" onclick="menutoggle()">
+                </div>
+            </div>
+        </div>
+
+        <!---------------This Creates the navigation bar------------------->
+        <nav>
+            <div class="table-container">
+                <div id="desktop">
+                    <b>
+                        <a href="../../index.html">Home</a> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+                        <a href="../mens.html">Men</a> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+                        <a href="../../women/women.html">Women</a> 	&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+                        <a href="../../accessories/accessories.html">Accessories</a> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+                        <a href="../../sale/sale.html">Sale</a> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+                        <a href="../../about/about.html">About</a>
+                    </b>
+                </div>
+                <table class="two-by-three" id="MenuItems">
+                    <tr>
+                        <td> <a href="../../index.html">Home</a></td>
+                    </tr>
+                    <tr>
+                        <td> <a href="../mens.html">Men</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="../../women/women.html">Women</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="../../accessories/accessories.html">Accessories</a></td>
+                    </tr>
+                    <tr>
+                        <td> <a href="../../sale/sale.html">Sale</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="../../about/about.html">About</a></td>
+                    </tr>
+                </table>
+            </div>
+        </nav>
+    </header>
+    <main>
+
+        <h2>Men's Hoodies</h2>
+        <h6>&nbsp &nbsp<a href="../mens.html">Go back</a></h6>
+        <div class="categories">
+            <div class="row">
+                <div class="col-4">
+                    <a href="m-products/logo-hoodie.html">
+                        <img src="../../images/logo-hoodie.png" />
+                        <br><h4>Men's Logo Hoodie</h4>
+                    </a>
+                </div>
+                <div class="col-4">
+                    <a href="m-products/script-hoodie.html">
+                        <img src="../../images/script-hoodie.png" />
+                        <br><h4>Men's Script Hoodie</h4>
+                    </a>
+                </div>
+                <div class="col-4">
+                    <a href="m-products/skeletons-hoodie.html">
+                        <img src="../../images/skeletons-hoodie.png" />
+                        <br><h4>Men's Skeletons Hoodie</h4>
+                    </a>
+                </div>
+                <div class="col-4">
+                    <a href="m-products/stars-sweatshirt.html">
+                        <img src="../../images/stars-sweatshirt.png" />
+                        <br><h4>Men's Stars Sweatshirt</h4>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+        <footer>
+            <img src="../../images/logo-inverted.jpeg" alt="Rising High Co logo">
+            <br><small><i>Copyright &copy 2024 Rising High Co. |</i></small>
+            <small><i><a href="mailto:risinghighco@outlook.com">RisingHighCo@outlook.com</a></i></small>
+        </footer>
+    </main>
+
+    <!------------JS------------>
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+        MenuItems.style.maxHeight = "0px";
+        function menutoggle() {
+            if (MenuItems.style.maxHeight == "0px") {
+                MenuItems.style.maxHeight = "200px";
+            }
+            else {
+                MenuItems.style.maxHeight = "0px";
+            }
+
+        }
+    </script>
+</body>
+</html>
