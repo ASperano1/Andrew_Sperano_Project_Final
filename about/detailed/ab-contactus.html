@@ -1,0 +1,113 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="This page is where a user will provide the information relevant to contacting the company.">
+    <link rel="stylesheet" href="../../project.css">
+    <title>Rising High Co. | Home</title>
+</head>
+<body>
+    <!---------------This Creates the header ------------------->
+    <header>
+        <div class="header">
+            <div class="logo-and-icons">
+                <div class="logo">
+                    <img src="../../images/logo1.jpeg" alt="Rising High Co logo">
+                </div>
+                <div class="header-icons">
+                    <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post" >
+                        <input type="hidden" name="cmd" value="_cart">
+                        <input type="hidden" name="business" value="RSF4TEW7CLW4Y">
+                        <input type="hidden" name="display" value="1">
+                        <input type="image" src="../../images/cart.jpeg" height="15px" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                    </form>
+                    <img src="../../images/menu-icon.png" alt="Menu" class="menu-icon" onclick="menutoggle()">
+                </div>
+            </div>
+        </div>
+
+        <!---------------This Creates the navigation bar------------------->
+        <nav>
+            <div class="table-container">
+                <div id="desktop">
+                    <b>
+                        <a href="../../index.html">Home</a> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+                        <a href="../../men/mens.html">Men</a> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+                        <a href="../../women/women.html">Women</a> 	&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+                        <a href="../../accessories/accessories.html">Accessories</a> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+                        <a href="../../sale/sale.html">Sale</a> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+                        <a href="../../about/about.html">About</a>
+                    </b>
+                </div>
+                <table class="two-by-three" id="MenuItems">
+                    <tr>
+                        <td> <a href="../../index.html">Home</a></td>
+                    </tr>
+                    <tr>
+                        <td> <a href="../../men/mens.html">Men</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="../../women/women.html">Women</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="../../accessories/accessories.html">Accessories</a></td>
+                    </tr>
+                    <tr>
+                        <td> <a href="../../sale/sale.html">Sale</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="../about.html">About</a></td>
+                    </tr>
+                </table>
+            </div>
+        </nav>
+    </header>
+   
+    <main>
+        <h6>&nbsp &nbsp<a href="../about.html">Go back</a></h6>
+        <h3>Contact Us</h3>
+        <p>Required information is marked with an asterisk (*).</p>
+
+        <form method="post" action="https://webdevbasics.net/scripts/demo.php">
+            <label for="myFName">*First Name:</label>
+            <input type="text" name="First-Name" id="myFName" required="required">
+
+            <label for="myLName">*Last Name:</label>
+            <input type="text" name="Last-Name" id="myLName" required="required">
+
+            <label for="myEmail">*E-mail:</label>
+            <input type="email" name="Email" id="myEmail" required="required">
+
+            <label for="mySubject">Subject:</label>
+            <input type="text" name="Subject" id="mySubject" required="required">
+
+            <label for="myComments">*Comments:</label>
+            <textarea name="Comments" id="myComments" rows="2" cols="20" required="required"></textarea>
+
+            <input type="submit" id="Submit" value="Submit">
+        </form>
+        <footer>
+            <img src="../../images/logo-inverted.jpeg" alt="Rising High Co logo">
+            <br><small><i>Copyright &copy 2024 Rising High Co. |</i></small>
+            <small><i><a href="mailto:risinghighco@outlook.com">RisingHighCo@outlook.com</a></i></small>
+        </footer>
+    </main>
+
+    <!------------JS------------>
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+        MenuItems.style.maxHeight = "0px";
+        function menutoggle() {
+            if (MenuItems.style.maxHeight == "0px") {
+                MenuItems.style.maxHeight = "200px";
+            }
+            else {
+                MenuItems.style.maxHeight = "0px";
+            }
+
+        }
+    </script>
+</body>
+</html>
